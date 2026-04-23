@@ -42,7 +42,7 @@ void RemoveSong(list<Song>& playlist) {
     
 }
 
-void DisplayPlaylist(list<Song>& playlist) {
+void DisplayPlaylist(const list<Song>& playlist) {
     if(playlist.size() < 1) {
         cout<<"Playlist is empty."<<endl;
         return;
@@ -144,7 +144,7 @@ int main(){
 
         case 6:
             break;
-            
+
         default:
             cout<<"Invalid choice. Please try again."<<endl;
         }
