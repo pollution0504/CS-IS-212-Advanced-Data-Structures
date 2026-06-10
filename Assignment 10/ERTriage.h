@@ -1,8 +1,8 @@
 // Name: Noah Poulatian
 // Date: 6/4/2026
 // Assignment: Assignment 10 - ER Triage System
-#define ERTRIAGE_H
 #ifndef ERTRIAGE_H
+#define ERTRIAGE_H
 
 #include "Patient.h"
 
@@ -14,8 +14,9 @@
 class ERTriage {
 	private:
 		std::priority_queue<std::pair<int, Patient>> _waitingRoom;
-		int _patientCounter = 0;
+		int _patientCounter;
 	public:
+		ERTriage();
 		void AdmitPatient();
 		void SeeNextPatient();
 		void PeekNextPatient();
